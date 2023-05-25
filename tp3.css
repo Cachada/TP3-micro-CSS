@@ -1,0 +1,158 @@
+
+    /* Estilos CSS para o layout do forno */
+    .forno {
+      width: 400px;
+      height: 300px;
+      background-color: rgb(112, 186, 199);
+      border: 2px solid black;
+      position: relative;
+      margin: 50px auto;
+    }
+    .disciplina {
+      width: 100%;
+      height: 50px;
+      background-color: #ff7e14;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-family: Arial, sans-serif;
+    }
+    .cabecalho {
+      width: 100%;
+      height: 115px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-family: Arial, sans-serif;
+    }
+    .loader {
+        width: 254px;
+        height: 254px;
+        border-radius: 50%;
+        perspective: 1000px;
+    }
+
+    .inner {
+        position: absolute;
+        box-sizing: content-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 80%;  
+    }
+
+    .inner.one {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-one 1s linear infinite;
+        border-bottom: 3px solid #ffffff;
+    }
+
+    .inner.two {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-two 1s linear infinite;
+        border-right: 3px solid #ffffff;
+    }
+
+    .inner.three {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-three 1s linear infinite;
+        border-top: 3px solid #ffffff;
+    }
+
+    @keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+    }
+
+    @keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+    }
+
+    @keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+    }
+    .arvore {
+      width: 660px;
+      height: 140px;
+      position: absolute;
+    }
+    .tronco {
+      width: 20px;
+      height: 85px;
+      background-color: #8B4513;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .copa {
+      width: 80px;
+      height: 80px;
+      background-color: #228B22;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+    }
+    .folha {
+      width: 30px;
+      height: 30px;
+      background-color: #7CFC00;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: bottom center;
+      border-radius: 50%;
+    }
+    .folha:nth-child(1) {
+      transform: translateX(-50%) rotate(-45deg);
+    }
+    .folha:nth-child(2) {
+      transform: translateX(-50%) rotate(45deg);
+    }
+    .folha:nth-child(3) {
+      transform: translateX(-50%) rotate(90deg);
+    }
+    .folha:nth-child(4) {
+      transform: translateX(-50%) rotate(-90deg);
+    }
+    .folha:nth-child(5) {
+      transform: translateX(-50%) rotate(-135deg);
+    }
+    .folha:nth-child(6) {
+      transform: translateX(-50%) rotate(135deg);
+    }
+    .folha:nth-child(7) {
+      transform: translateX(-50%) rotate(180deg);
+    }
+    /*.mostrador {
+      width: 100px;
+      height: 50px;
+      background-color: white;
+      border: 1px solid black;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 5px;
+      text-align: center;
+    }*/
